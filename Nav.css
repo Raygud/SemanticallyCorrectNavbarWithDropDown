@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  position: relative;
+  height: 50px;
+  background-color: violet;
+}
+
+nav img {
+  position: absolute;
+  height: 100%;
+}
+
+nav ul {
+  line-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav ul li {
+  background-color: snow;
+  text-align: center;
+  width: 200px;
+  line-height: 50px;
+}
+
+nav ul li:hover ul {
+  height: 165px;
+}
+
+nav ul li ul {
+  position: absolute;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 600ms ease-in-out;
+  transition: 600ms ease-in-out;
+}
+
+nav ul li ul a li {
+  margin-bottom: 1px;
+  line-height: 40px;
+  background-color: steelblue;
+}
+/*# sourceMappingURL=Nav.css.map */
